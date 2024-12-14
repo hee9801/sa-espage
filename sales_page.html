@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anker PowerCore 20100mAh Sales Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8; /* Light grey */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff; /* White */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background: #4169e1; /* Soft blue */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .attention {
+            background: #e8f1fc; /* Light blue */
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .attention .image-gallery {
+            position: relative;
+            max-width: 300px;
+            margin: 15px auto;
+        }
+        .attention .main-image {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .attention .thumbnails {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .attention .thumbnail {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 4px;
+        }
+        .attention .thumbnail:hover {
+            border-color: #4169e1;
+        }
+        .interest {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .interest h2 {
+            color: #4169e1;
+        }
+        .interest img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 8px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .desire {
+            background: #f9f9f9; /* Light grey */
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .desire img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 8px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .action {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .btn {
+            background: #28a745;
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 30px;
+        }
+    </style>
+    <script>
+        function changeMainImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Anker PowerCore 20100mAh Portable Charger</h1>
+        </header>
+
+        <!-- Attention -->
+        <div class="attention">
+            <h2>Never Run Out of Power Again!</h2>
+            <p>Stay connected and powered up wherever life takes you with the Anker PowerCore 20100mAh Portable Charger.</p>
+            <div class="image-gallery">
+                <img id="mainImage" class="main-image" src="images/1.webp" alt="Anker PowerCore 20100mAh">
+                <div class="thumbnails">
+                    <img class="thumbnail" src="images/1.webp" alt="Anker PowerCore Thumbnail 1" onclick="changeMainImage('images/1.webp')">
+                    <img class="thumbnail" src="images/2.webp" alt="Anker PowerCore Thumbnail 2" onclick="changeMainImage('images/2.webp')">
+                    <img class="thumbnail" src="images/3.webp" alt="Anker PowerCore Thumbnail 3" onclick="changeMainImage('images/3.webp')">
+                    <img class="thumbnail" src="images/4.webp" alt="Anker PowerCore Thumbnail 3" onclick="changeMainImage('images/4.webp')">
+                </div>
+            </div>
+        </div>
+
+        <!-- Interest -->
+        <div class="interest">
+            <h2>Why Choose the Anker PowerCore?</h2>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Massive 20100mAh capacity: Charge your smartphone up to 7 times!</li>
+                <li>Dual device charging: Power up two gadgets simultaneously.</li>
+                <li>Fast-charging technology: Enjoy optimized charging speeds with PowerIQ and VoltageBoost.</li>
+                <li>Compact and lightweight: Perfect for travel and daily use.</li>
+            </ul>
+            
+        </div>
+
+        <!-- Desire -->
+        <div class="desire">
+            <h2>Experience the Convenience</h2>
+            <p>With Anker’s PowerCore 20100mAh, you can enjoy uninterrupted productivity, endless entertainment, and peace of mind knowing your devices are always ready for action.</p>
+            <p>Whether you’re traveling, working, or simply relaxing at home, this portable charger is your ultimate power companion.</p>
+        </div>
+
+        <!-- Action -->
+        <div class="action">
+            <a href="#" class="btn">Buy Now for RM240!</a>
+            <p>Free shipping on all orders within Malaysia. Limited stock available!</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Anker Innovations. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
